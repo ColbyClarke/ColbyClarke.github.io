@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/snackbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>bnb-Location</title>
+</head>
+
+<body data-spy="scroll" data-target="#main-nav" id="home">
+
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Navbar</a>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="attractions.html" class="nav-link">Attractions</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link">Location</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+
+                <a href="mailto:mungomungos2@gmail.co.za " type="button" class="btn btn-alternate">
+                    Contact
+                </a>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci harum porro autem doloribus quisquam quas nam iusto corporis repellat voluptates accusantium culpa quibusdam tenetur sint eos eius consectetur cumque, ea sunt, illo libero molestiae? Incidunt laborum aut porro odio facere similique atque excepturi quos, voluptates enim minima expedita nemo, adipisci libero a laudantium placeat deserunt voluptatem? Suscipit consectetur fugiat commodi harum delectus sit cumque voluptatibus vel optio! Quam alias dolorum obcaecati numquam error omnis impedit maiores voluptas. Assumenda ea modi rerum qui, architecto praesentium nihil in vitae ipsa sapiente. Voluptatem tempora nulla vitae assumenda accusantium est voluptas a mollitia in.
+        </p>
+    </div>
+    <div id="map" class="container mt-3">
+
+    </div>
+
+    <div class="bg-dark text-white mt-3 py-3 ">
+        <div class="container">
+        <div class="row ">
+            <div class="col">
+                <div>
+                    <span>
+                        <i class="fa fa-phone"></i>
+                        <a class="text-white" target="_blank" rel="nofollow noreferrer" href="tel:+27794092430">+27
+                            79 409 2430</a>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <i class="fa fa-envelope"></i>
+                        <a class="text-white" target="_blank" rel="nofollow noreferrer"
+                            href="mailto:mungomungos2@gmail.co.za ">mungomungos2@gmail.co.za</a>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <i class="fa fa-map-marker"></i>
+                        <a target="_blank" rel="nofollow noreferrer" class="text-white"
+                            href="https://goo.gl/maps/zYLDeMHXq7N6DrFu5">
+                            R512 Pelindaba Rd, Hartbeespoort<br>Broederstroom<br>South Africa</a>
+                    </span>
+                </div>
+        
+        
+            </div>
+            <div class="col">
+                <ul>
+                    <li>+27 794092430</li>
+                    <li>mungomungos2@gmail.co.za</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="text-center footer py-3">
+        Footer
+      </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2"
+        async></script>
+    <script>
+
+        // Init Scrollspy
+        $("body").scrollspy({ target: "#main-nav" });
+
+        // Smooth Scrolling
+        $("#main-nav a").on("click", function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                const hash = this.hash;
+
+                $("html, body").animate(
+                    {
+                        scrollTop: $(hash).offset().top,
+                    },
+                    600,
+                    function () {
+                        window.location.hash = hash;
+                    }
+                );
+            }
+        });
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/snackbar.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+</body>
+
+</html>
